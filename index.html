@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenfield Public School – Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="home.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-mark">G</span>
+        <span class="logo-text">
+          Greenfield<br />
+          <small>Public School</small>
+        </span>
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <a href="#hero">Home</a>
+        <a href="#admission">Admission</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#faq">Help / FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html" class="btn btn-primary">Login</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Inspiring Minds, Shaping Futures</h1>
+      <p>
+        A vibrant day school where academic excellence meets sports, arts, and
+        values-based education.
+      </p>
+      <div class="hero-buttons">
+        <a href="#admission" class="btn btn-primary">Apply for Admission</a>
+        <a href="#curriculum" class="btn btn-outline">View Curriculum</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="carousel-section">
+    <div class="container">
+      <h2>Campus Life Highlights</h2>
+      <div class="carousel" id="carousel">
+        <div class="carousel-slide active">
+          <img
+            src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&h=600&fit=crop&auto=format"
+            alt="Modern Greenfield Public School building with greenery"
+            loading="lazy"
+          />
+          <div class="caption">Modern, eco-friendly school campus</div>
+        </div>
+        <div class="carousel-slide">
+          <img
+            src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=600&fit=crop&auto=format"
+            alt="Students engaged in science experiments"
+            loading="lazy"
+          />
+          <div class="caption">Hands-on science experiments and discoveries</div>
+        </div>
+        <div class="carousel-slide">
+          <img
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&auto=format"
+            alt="Students participating in sports activities"
+            loading="lazy"
+          />
+          <div class="caption">Physical education and sports excellence</div>
+        </div>
+        <div class="carousel-slide">
+          <img
+            src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=800&h=600&fit=crop&auto=format"
+            alt="Students using computers in a tech classroom"
+            loading="lazy"
+          />
+          <div class="caption">Digital literacy and coding workshops</div>
+        </div>
+        <div class="carousel-slide">
+          <img
+            src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&h=600&fit=crop&auto=format"
+            alt="Students performing on stage during school event"
+            loading="lazy"
+          />
+          <div class="caption">Cultural performances and talent shows</div>
+        </div>
+
+        <div class="carousel-slide">
+          <img
+            src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop&auto=format"
+            alt="Students reading and studying in library"
+            loading="lazy"
+          />
+          <div class="caption">Quiet study zones and extensive library resources</div>
+        </div>
+        <div class="carousel-slide">
+          <img
+            src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&h=600&fit=crop&auto=format"
+            alt="Students creating art projects"
+            loading="lazy"
+          />
+          <div class="caption">Creative arts and design thinking workshops</div>
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <button id="prevSlide" class="circle-btn">&#10094;</button>
+        <button id="nextSlide" class="circle-btn">&#10095;</button>
+      </div>
+
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <section id="admission" class="section light-bg">
+    <div class="container">
+      <h2>Admission</h2>
+
+      <div class="admission-visual card">
+        <img
+          src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit=crop&auto=format"
+          alt="School admission office with desk and forms"
+          class="full-width-img"
+          loading="lazy"
+        />
+        <p class="img-caption">
+          Visit our campus and interact with our admission team to know more.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=400&h=300&fit=crop&auto=format"
+            alt="Modern school building with greenery"
+            class="card-img-top"
+            loading="lazy"
+          />
+          <h3>Why Choose Greenfield?</h3>
+          <ul class="feature-list">
+            <li>CBSE-aligned curriculum with strong STEM focus.</li>
+            <li>Low student–teacher ratio for personal attention.</li>
+            <li>Clubs for robotics, arts, music, and sports.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&h=300&fit=crop&auto=format"
+            alt="Empty school admission office desk"
+            class="card-img-top"
+            loading="lazy"
+          />
+          <h3>Admission Process</h3>
+          <ol class="numbered-list">
+            <li>Submit the online enquiry form.</li>
+            <li>Visit campus and interact with the admission team.</li>
+            <li>Appear for a short interaction/assessment.</li>
+            <li>Complete documentation and fee payment.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="curriculum" class="section">
+    <div class="container">
+      <h2>Curriculum</h2>
+      <div class="grid-3">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=400&h=300&fit=crop&auto=format"
+            alt="Primary classroom with learning materials"
+            class="card-img-top"
+            loading="lazy"
+          />
+          <h3>Primary (I–V)</h3>
+          <p>
+            Concept-based learning with focus on literacy, numeracy, and
+            foundational science.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=400&h=300&fit=crop&auto=format"
+            alt="Middle school classroom with project materials"
+            class="card-img-top"
+            loading="lazy"
+          />
+          <h3>Middle (VI–VIII)</h3>
+          <p>
+            Integrated curriculum with project work, coding, and experiential
+            learning.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop&auto=format"
+            alt="Secondary classroom with study materials"
+            class="card-img-top"
+            loading="lazy"
+          />
+          <h3>Secondary (IX–XII)</h3>
+          <p>
+            Stream-wise options in Science, Commerce, and Humanities with
+            career guidance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faculty" class="section light-bg">
+    <div class="container">
+      <h2>Faculty</h2>
+      <p class="section-intro">
+        A dedicated team of qualified and experienced teachers mentors every
+        child.
+      </p>
+      <div class="grid-3">
+        <div class="card faculty-card">
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&auto=format"
+            alt="Portrait of Dr. Ananya Sharma, Principal"
+            loading="lazy"
+          />
+          <h3>Dr. Amit Sharma</h3>
+          <p>Principal, 18+ years of experience</p>
+        </div>
+        <div class="card faculty-card">
+          <img
+            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=300&fit=crop&auto=format"
+            alt="Portrait of Rahul Verma, Senior Science Faculty"
+            loading="lazy"
+          />
+          <h3>Rahul Verma</h3>
+          <p>Senior Science Faculty & STEM Club Mentor</p>
+        </div>
+        <div class="card faculty-card">
+          <img
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=300&fit=crop&auto=format"
+            alt="Portrait of Neha Singh, Sports Coordinator"
+            loading="lazy"
+          />
+          <h3>Neha Singh</h3>
+          <p>Sports Coordinator & Fitness Coach</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="faq" class="section">
+    <div class="container">
+      <h2>Help / FAQ</h2>
+
+      <div class="grid-2 faq-visuals">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=400&h=300&fit=crop&auto=format"
+            alt="Yellow school buses parked in front of the school"
+            class="card-img-top"
+            loading="lazy"
+          />
+          <p class="img-caption">
+            GPS-enabled transport ensures safe pickup and drop across the city.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&auto=format"
+            alt="CCTV camera installed in a school corridor"
+            class="card-img-top"
+            loading="lazy"
+          />
+          <p class="img-caption">
+            CCTV cameras and regular safety drills keep the campus secure.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What are the school timings?</summary>
+          <p>
+            Regular timings are 8:00 AM to 2:00 PM, Monday to Friday. Activity
+            clubs run till 4:00 PM on selected days.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Is transportation available?</summary>
+          <p>
+            Yes, GPS-enabled buses cover major routes across the city with
+            trained staff on board.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>What safety measures are followed?</summary>
+          <p>
+            CCTV surveillance, verified staff, infirmary, and regular safety
+            drills are part of our safety framework.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="section contact-section light-bg">
+    <div class="container grid-2">
+      <div>
+
+        <h2>Contact Us</h2>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&auto=format"
+            alt="Illustration or map showing the location of Greenfield Public School in Bengaluru"
+            class="card-img-top"
+            loading="lazy"
+          />
+        </div>
+        <p>
+          Greenfield Public School<br />
+          221B Learning Avenue, Bengaluru, India
+        </p>
+        <p>
+          Phone: +91-98765-43210<br />
+          Email:
+          <a href="mailto:info@greenfieldschool.edu">info@greenfieldschool.edu</a>
+        </p>
+      </div>
+
+      <form id="contactForm" class="card contact-form" novalidate>
+        <h3>Send a Message</h3>
+        <div class="input-group">
+          <label for="cname">Full Name</label>
+          <input
+            type="text"
+            id="cname"
+            name="cname"
+            placeholder="Enter your name"
+            required
+          />
+          <small class="error"></small>
+        </div>
+        <div class="input-group">
+          <label for="cemail">Email</label>
+          <input
+            type="email"
+            id="cemail"
+            name="cemail"
+            placeholder="Enter your email"
+            required
+          />
+          <small class="error"></small>
+        </div>
+        <div class="input-group">
+          <label for="cmessage">Message</label>
+          <textarea
+            id="cmessage"
+            name="cmessage"
+            rows="4"
+            placeholder="How can we help you?"
+            required
+          ></textarea>
+          <small class="error"></small>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">
+          Submit
+        </button>
+        <p id="contactSuccess" class="success-msg"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 Greenfield Public School. All rights reserved.</p>
+      
+    </div>
+  </footer>
+</body>
+</html>

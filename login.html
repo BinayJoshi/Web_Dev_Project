@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenfield Public School – Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="login.js"></script>
+</head>
+<body class="login-body">
+  <div class="overlay"></div>
+
+  <main class="login-wrapper">
+    <section class="login-card glass-card">
+      <div class="login-header">
+        <h1>Greenfield Public School</h1>
+        <p>Secure Parent & Student Portal</p>
+      </div>
+
+      <form id="loginForm" class="login-form" novalidate>
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter username (admin)"
+            required
+          />
+          <small class="error" id="userError"></small>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password (1234)"
+            required
+            minlength="4"
+          />
+          <small class="error" id="passError"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary full-width">
+          Login
+        </button>
+
+        <p class="demo-note">
+          Demo credentials: <strong>admin / 1234</strong>
+        </p>
+
+        <p class="login-footer-text">
+          Having trouble? Contact the school office for assistance.
+        </p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
